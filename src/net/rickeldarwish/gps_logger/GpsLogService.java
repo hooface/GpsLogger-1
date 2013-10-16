@@ -69,7 +69,7 @@ public class GpsLogService extends Service {
 		Criteria locCriteria = new Criteria();
 		locationMgr.requestLocationUpdates(15, 0, locCriteria, locationLsnr, null);
 		
-		return Service.START_NOT_STICKY;
+		return Service.START_STICKY;
 	}
 	
 	@Override
