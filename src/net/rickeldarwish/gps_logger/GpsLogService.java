@@ -58,7 +58,12 @@ public class GpsLogService extends Service {
 		};
 		
 		Date date = new Date();
-		File dir = Environment.getExternalStorageDirectory();
+		File baseDir = Environment.getExternalStorageDirectory();
+		File dir = new File(baseDir + File.separator + "net.rickeldarwish.gps_logger");
+		if (!dir.exists())
+		{
+			dir.mkdirs();
+		}
 		File log_file = new File(dir, date.getTime() + ".txt");
 		try {
 			log = new BufferedWriter(new FileWriter(log_file));
