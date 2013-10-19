@@ -8,3 +8,6 @@ Installation is simple: download this code, compile it using [Eclipse with the A
 If you use [AIDE](https://play.google.com/store/apps/details?id=com.aide.ui&hl=en), the IDE running on the Android platform, you don't need a computer. Just clone this repo to your IDE and run it!
 
 The current version assumes that you have a file manager that allows you to download your trip files. They're human-readable, JSON-formatted text files that reside in a directory of your phone's default storage called net.rickeldarwish.gps_logger.
+
+
+This work is licensed under a Creative Commons [Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/).
