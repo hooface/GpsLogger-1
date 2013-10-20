@@ -68,9 +68,8 @@ public class GpsLogService extends Service {
 		try {
 			log = new BufferedWriter(new FileWriter(log_file));
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}//openFileOutput(date.toString() + ".txt", android.content.Context.MODE_WORLD_WRITEABLE);
+		}
 		Criteria locCriteria = new Criteria();
 		locationMgr.requestLocationUpdates(15, 0, locCriteria, locationLsnr, null);
 		
@@ -83,7 +82,6 @@ public class GpsLogService extends Service {
 			log.flush();
 			log.close();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		locationMgr.removeUpdates(locationLsnr);
